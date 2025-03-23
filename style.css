@@ -81,19 +81,16 @@ header .top-header .container .logo {
 }
 
 header .top-header .container nav {
-    display: block;
-    width: fit-content;
+    width: 31.7%;
     height: auto;
-    float: right;
 }
 
 header .top-header .container nav ul {
-    width: fit-content;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
 }
 
 header .top-header .container nav ul li {
