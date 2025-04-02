@@ -1,0 +1,467 @@
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url('fonts/myriadpro-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/myriadpro-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/myriadpro-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/myriadpro-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/myriadpro-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/myriadpro-regular.svg#myriadpro-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, head, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "MyriadPro-Regular", sans-serif;
+    font-size: 1.1vw;
+    font-weight: 400;
+    color: #000;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    object-fit: contain;
+}
+
+.container {
+    width: 91.6%;
+    margin: 0 auto;
+}
+
+header {
+    height: 23.75%;
+    padding-block: 1.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+header .logo {
+    font-size: 10.4vw;
+    line-height: 100%;
+}
+
+header nav {
+    width: 25%;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li {
+    cursor: pointer;
+}
+
+.hero {
+    height: calc(100% - 23.75%);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 7%;
+}
+
+.hero img {
+    width: 55%;
+    height: auto;
+    aspect-ratio: 726/320;
+}
+
+.hero .content {
+    width: 40.5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .content p {
+    font-size: 1.3vw;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1440/750;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1440/750;
+}
+
+.directions {
+    padding-block: 5.5%;
+}
+
+.directions h2 {
+    font-size: 3.3vw;
+    font-weight: 400;
+    margin-bottom: 2.3%;
+}
+
+.directions .blocks {
+    width: 100%;
+    height: auto;
+}
+
+.directions .blocks .block {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1320/300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.directions .blocks .block .num {
+    font-size: 5.6vw;
+    font-weight: 600;
+}
+
+.directions .blocks .block .name {
+    width: 45%;
+    text-align: left;
+}
+
+.directions .blocks .block .name h4 {
+    width: 100%;
+    font-size: 3.3vw;
+    font-weight: 400;
+}
+
+.directions .blocks .block .name p {
+    width: 100%;
+    font-size: 1.4vw;
+}
+
+.directions .blocks .block .photo {
+    width: 22.7%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.directions .blocks .block .photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.directions .blocks hr {
+    margin-block: 3%;
+}
+
+.approach {
+    padding-block: 5.5%;
+}
+
+.approach h2 {
+    font-size: 3.3vw;
+    font-weight: 400;
+    margin-bottom: 2.3%;
+}
+
+.approach .blocks {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1320/562;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.approach .blocks .block {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5%;
+}
+
+.approach .blocks .block h4 {
+    width: 100%;
+    font-size: 1.7vw;
+    font-weight: 400;
+}
+
+.approach .blocks .block img {
+    width: 75%;
+    height: auto;
+    aspect-ratio: 380/350;
+}
+
+.approach .blocks .block p {
+    width: 100%;
+    height: 10%;
+}
+
+.project {
+    padding-block: 5.5%;
+}
+
+.project h2 {
+    font-size: 3.3vw;
+    font-weight: 400;
+    margin-bottom: 2.3%;
+}
+
+.project .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project .content p {
+    font-size: 2vw;
+}
+
+.partners {
+    padding-block: 5.5%;
+}
+
+.partners h2 {
+    font-size: 3.3vw;
+    font-weight: 400;
+    margin-bottom: 2.3%;
+}
+
+.partners .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners .content p {
+    font-size: 2vw;
+}
+
+.about {
+    padding-block: 5.5%;
+}
+
+.about h2 {
+    font-size: 3.3vw;
+    font-weight: 400;
+    margin-bottom: 2.3%;
+}
+
+.about .content {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1320/481;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .content p {
+    width: 45%;
+    font-size: 1.7vw;
+}
+
+.about .content img {
+    width: auto;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.contact {
+    padding-block: 5.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.contact .content {
+    width: 26.5%;
+}
+
+.contact .content h2 {
+    width: 100%;
+    font-size: 4.4vw;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.contact .content p {
+    width: 100%;
+    font-size: 1.7vw;
+}
+
+.contact form {
+    width: 52%;
+}
+
+.contact form input:not(input[type="checkbox"]) {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #5D5A5A;
+    font-size: 1.7vw;
+    padding: 2.6% 2.3%;
+    margin-bottom: 5.8%;
+    color: #5D5A5A;
+}
+
+.contact form input::placeholder {
+    font-size: 1.7vw;
+    color: #5D5A5A;
+}
+
+.contact form .checkbox {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 5.8%;
+}
+
+.contact form .checkbox input[type="checkbox"] {
+    appearance: none;
+    width: 3%;
+    height: auto;
+    aspect-ratio: 1/1;
+    margin-right: 2%;
+    border: 1px solid #000;
+}
+
+.contact form .checkbox p {
+    font-size: 1.4vw;
+}
+
+.contact form button {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 686/72;
+    border: none;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contact form button p {
+    font-size: 1.7vw;
+    font-weight: 600;
+    margin-right: 1%;
+}
+
+.contact form button img {
+    width: 4.5%;
+}
+
+footer {
+    width: 91.6%;
+    height: auto;
+    aspect-ratio: 1440/400;
+    padding-block: 3%;
+}
+
+footer .top {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer .top .left {
+    height: 100%;
+}
+
+footer .top .left h1 {
+    font-size: 4.4vw;
+}
+
+footer .top .medium {
+    width: 69.8%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+footer .top .medium h1 {
+    font-size: 4.4vw;
+    margin-right: 8.7%;
+}
+
+footer .top .medium ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .top .medium ul li {
+    font-size: 1.4vw;
+}
+
+footer .top .right {
+    width: 6.4%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .top .right img {
+    width: 38%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+footer .bottom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .bottom a {
+    margin-left: 19%;
+    color: #5D5A5A;
+    font-size: 1.7vw;
+}
+
+footer .bottom ul {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .bottom ul li a {
+    font-size: 1vw;
+    margin: 0;
+}
+
+
+
