@@ -8,6 +8,16 @@
 		url('fonts/myriadpro-regular.svg#myriadpro-regular') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
+@font-face {
+	font-family: 'MyriadPro-Light';
+	src: url('fonts/myriadpro-light.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/myriadpro-light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/myriadpro-light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/myriadpro-light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/myriadpro-light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/myriadpro-light.svg#myriadpro-light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -134,6 +144,18 @@ header nav ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    padding: 3% 4.2%; 
+}
+
+.directions .blocks .block:not(.finish) {
+    border-bottom: 1px solid #5D5A5A;
+}
+
+.directions .blocks .block:hover {
+    animation: fill 1s linear forwards;
+    background: #E6E3E3;
+    transition: all 1s ease;
 }
 
 .directions .blocks .block .num {
@@ -166,10 +188,6 @@ header nav ul li {
 .directions .blocks .block .photo img {
     width: 100%;
     height: 100%;
-}
-
-.directions .blocks hr {
-    margin-block: 3%;
 }
 
 .approach {
